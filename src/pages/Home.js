@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadUsers, deleteUsers, editUser } from '../redux/actions';
+import { loadUsers, deleteUsers, editUser,loadPostStart } from '../redux/actions';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import InplaceTable from './InplaceTable';
@@ -56,6 +56,7 @@ function Home() {
 
   useEffect(() => {
     dispatch(loadUsers());
+    dispatch(loadPostStart())
   }, []);
 
   const handleDelete = id => {
