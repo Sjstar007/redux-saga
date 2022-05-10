@@ -40,7 +40,7 @@ const userReducer = (state = initialState,action) =>{
             return{
                 ...state,
                 loading: false,
-                posts: action.payload
+                users: action.payload
             }
         case "LOAD_POST_FAIL":
             return{

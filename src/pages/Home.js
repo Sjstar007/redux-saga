@@ -55,7 +55,7 @@ function Home() {
   const { users } = useSelector(state => state.user_data);
 
   useEffect(() => {
-    dispatch(loadUsers());
+    // dispatch(loadUsers());
     dispatch(loadPostStart())
   }, []);
 

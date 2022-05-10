@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const loadPostApi = async () => {
-    await axios.get(`https://jsonplaceholder.typicode.com/users`)
+   return  await axios.get(`https://jsonplaceholder.typicode.com/users`)
 }
